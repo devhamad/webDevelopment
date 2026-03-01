@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 400px;
+        padding: 10px;
+        margin: 10px auto;
+        border: 1px solid black;
+      }
+      p {
+        border: 1px solid black;
+        margin: 10px;
+      }
+      /* div > p:nth-child(1) {
+        background-color: lightblue;
+      } */
+      /* div > p:first-of-type {
+        background-color: lightblue;
+      } */
+      /* div > p:only-child {
+        background-color: lightblue;
+      } */
+      div > p:only-of-type {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>first p in body</p>
+    <div>
+      <p>first p</p>
+      <span>last span</span>
+    </div>
+    <div>
+      <p>first p</p>
+    </div>
+    <div>
+      <span>it's span</span>
+      <p>first p</p>
+      <p>last p</p>
+    </div>
+    <div></div>
+  </body>
+</html>

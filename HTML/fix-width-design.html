@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #mainwrapper {
+        width: 1000px;
+        margin: 10px auto;
+        padding: 5px;
+        border: 1px solid black;
+      }
+      #mainheader,
+      #mainfooter {
+        background-color: lightblue;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+      }
+      #mainnav {
+        background-color: blue;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+      }
+      #mainnav li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        color: white;
+      }
+      #mainnav li:hover {
+        cursor: pointer;
+        color: yellow;
+        text-decoration: underline;
+      }
+      #mainsection {
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+        width: 800px;
+        display: inline-block;
+      }
+      article {
+        border: 1px solid black;
+        margin: 5px;
+        padding: 10px 5px;
+      }
+      article:nth-child(odd) {
+        background-color: lightgray;
+      }
+      article:nth-child(even) {
+        background-color: lightblue;
+      }
+      #mainaside {
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+        width: 150px;
+        display: inline-block;
+      }
+      #mainaside p {
+        border: 1px solid black;
+        margin: 5px 2px;
+        padding: 5px 2px;
+        text-align: center;
+      }
+      #mainaside > p:nth-child(odd) {
+        background-color: lightgray;
+      }
+      #mainaside > p:nth-child(even) {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainwrapper">
+      <header id="mainheader">
+        <h4>ITI Mansoura</h4>
+      </header>
+      <nav id="mainnav">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <section id="mainsection">
+        <article>
+          <header>
+            <h5>Article one</h5>
+          </header>
+          <p>Article one body</p>
+          <footer>
+            <p>CopyRights &copy; reserved to auther one</p>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h5>Article two</h5>
+          </header>
+          <p>Article two body</p>
+          <footer>
+            <p>CopyRights &copy; reserved to auther two</p>
+          </footer>
+        </article>
+      </section>
+      <aside id="mainaside">
+        <p>Mansoura</p>
+        <p>Smart</p>
+        <p>Alex</p>
+        <p>Aswan</p>
+      </aside>
+      <footer id="mainfooter">
+        <p>CopyRights &copy; reserved to ITI</p>
+      </footer>
+    </div>
+  </body>
+</html>
